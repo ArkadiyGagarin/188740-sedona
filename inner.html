@@ -5,20 +5,21 @@
     <title>Sedona-hotels</title>
   </head>
   <body>
-		<header class="main-header">
-			<div class="container">
+		<header class="main-header">			
 				<div class="active-logo">
 					<a href="index.html"> <img src="http://placehold.it/150x100" alt="Логотип">
 					</a>
 				</div>
 				<nav class="navigation">
-					<ul>
+					<ul class="left">
 						<li>
 						  <a href="#">Информация</a>
 						</li>
 						<li>
 						  <a href="#">Фото и видео</a>
 						</li>
+					</ul>
+					<ul class="right">
 						<li>
 						  <a href="#">Карта штата</a>
 						</li>
@@ -26,8 +27,7 @@
 						  <a href="#">Гостиницы</a>
 						</li>
 					</ul>
-				</nav>
-			</div>
+				</nav>			
 		</header>
 		
 		<form class="condition-choice" action="https://echo.htmlacademy.ru" method="post">
@@ -65,14 +65,14 @@
 					<div class="found">НАЙДЕНО: 3</div>
 					<p class="sort">СОРТИРОВКА:</p>
 					<ul>
-						<li><span class="sort-by-price">ПО ЦЕНЕ</span></li>
+						<li>ПО ЦЕНЕ</li>
 						<li><a href="#">ПО ТИПУ</a></li>
 						<li><a href="#">ПО РЕЙТИНГУ</a></li>
 					</ul>	
 				</div>
 				<div class="sort-rows">
-					<span class="up-row"></span>
-					<span class="down-row"></span>
+					<a class="up-row" href="#" title="по возрастанию"> По возрастанию </а>
+					<a class="down-row" href="по убыванию" title="по убыванию"> По убыванию </а>
 				</div>
 			</section>
 			<section class="hotels"> 

@@ -6,28 +6,28 @@
   </head>
   <body>
 		<header class="main-header">
-			<div class="container">
-				<div class="active-logo">
-					<a href="index.html"> <img src="http://placehold.it/150x100" alt="logo">
+			<div class="active-logo">
+					<a href="index.html"> <img src="http://placehold.it/150x100" alt="Логотип">
 					</a>
-				</div>
-				<nav class="navigation">
-					<ul>
-						<li>
-						  <a href="#">Информация</a>
-						</li>
-						<li>
-						  <a href="#">Фото и видео</a>
-						</li>
-						<li>
-						  <a href="#">Карта штата</a>
-						</li>
-						<li>
-						  <a href="inner.html">Гостиницы</a>
-						</li>
-					</ul>
-				</nav>
 			</div>
+			<nav class="navigation">
+				<ul class="left">
+					<li>
+					 <a href="#">Информация</a>
+					</li>
+					<li>
+					  <a href="#">Фото и видео</a>
+					</li>
+				</ul>
+				<ul class="right">
+					<li>
+						<a href="#">Карта штата</a>
+					</li>
+					<li>
+						<a href="#">Гостиницы</a>
+					</li>
+				</ul>
+			</nav>
 		</header>
 		<main class="main-container">
 			<div class="index-logo">
@@ -42,26 +42,23 @@
 			<section class="features fix" >
 				<div class="features-item">
 					<h2>Настоящий городок</h2>
-					<span>&mdash;&#8470;1&mdash;</span>
+					<div>&mdash;&#8470;1&mdash;</div>
 					<p>Седона &mdash; не аттракцион для туристов, там течет своя жизнь.</p>
 				</div>
 				<div class="features-img">
 					<img src="http://placehold.it/150x100" alt="Настоящий городок">
 				</div>	
 			</section>
-			<section class="offers">
-				<div class="lodging">
-					<img src="http://placehold.it/150x100" alt="Жилье">
+			<section class="benefits offers">
+				<div class="benefits lodging">					
 					<h2>Жилье</h2>
 					<p>Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
 				</div>
-				<div class="food">
-					<img src="http://placehold.it/150x100" alt="Еда">
+				<div class="benefits food">					
 					<h2>Еда</h2>
 					<p>Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
 				</div>
-				<div class="gifts">
-					<img src="http://placehold.it/150x100" alt="Подарки">
+				<div class="benefits gifts">					
 					<h2>Подарки</h2>
 					<p>Не только китайского, но и местного производства!</p>
 				</div>
@@ -98,51 +95,47 @@
 				<p>Укажите предпологаемые даты поездки,
 				и мы покажем вам лучшие предложения гостиниц в седоне</p>
 				<div class="btn">
-					<form>
-					  <button>Поиск гостиницы в седоне</button>
-					</form>
+					  <button>Поиск гостиницы в седоне</button>					
 				</div>
 			</section>
 		</main>
 				 <form class="application-form" action="https://echo.htmlacademy.ru" method="post">
 					<div class="application-form main">
 						<div class="form-row">
-							<div class="left-column">
-								<label for="arrival">Дата заезда:</label>
-							</div>
-							<div class="right-column">
+							<div class="column">
+								<label for="arrival">Дата заезда:</label>								
 								<input type="text" name="arrival-date" id="arrival" value="24 апреля 2016">
 							</div>
+							<div class="calenar"></div>
 						</div>
 						<div class="form-row">
-							<div class="lef-column">
-								<label for="departure">Дата выезда</label>
-							</div>
-							<div class="right-column">
+							<div class="column">
+								<label for="departure">Дата выезда</label>								
 								<input type="text" name="departure" id="departure" value="4 июля 2017">
 							</div>
+							<div class="calendar"></div>
 						</div>
 						<div class="form-row">
-							<div class="adults-row">
-								<div class="adults">
+							<div class="adults">
 									<label for="adults">Взрослые</label>
-								</div>
-								<div class="quantity-adults">	
-									<input type="text" name="adults" id="adults" value="2">
-								</div>
+							</div>
+							<div class="counter">
+									<div class="icon-minus"></div>
+									<input type="text" name="adults" id="adults" value="2">		
+									<div class="icon-plus"></div>
 							</div>
 							<div class="children-row">
-								<div class="children">
+								<div class="children">									
 									<label for="children">Дети</label>
 								</div>
-								<div class="quantity-children">
+								<div class="counter">
+									<div class="icon-minus"></div>
 									<input type="text" name="children" id="children" value="0">
+									<div class="icon-plus"></div>
 								</div>
 							</div>
-						</div>
-						<div class="search-btn">
-							<button class="btn" type="submit"><span>Найти</span></button>
-						</div>
+						</div>						
+						<button class="btn" type="submit">Найти</button>						
 					</div>
 				</form>
 				
