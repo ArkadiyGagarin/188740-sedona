@@ -31,33 +31,32 @@
 		</header>
 		
 		<form class="condition-choice" action="https://echo.htmlacademy.ru" method="post">
-			<div class="filter-group">
-				<div class="filter-title">Инфраструктура</div>
+			<fieldset>
+				<legend>Инфраструктура</legend>
 				<input type="checkbox" name="pool" id="swimming-pool" checked>
 				<label for="swimming-pool">Бассейн</label>
 				<input type="checkbox" name="parking" id="parking">
 				<label for="parking">Парковка</label>
 				<input type="checkbox" name="internet" id="internet">
 				<label for="parking">WI-FI</label>
-			</div>
-			<div class="filter-group">
-				<div class="filter-title">Тип жилья</div>
+			</fieldset>
+			<fieldset>
+				<legend>Тип жилья</legend>
 					<input type="checkbox" name="hotel" id="hotel" checked>
 					<label for="hotel">Гостиница</label>
 					<input type="checkbox" name="motel" id="motel" checked>
 					<label for="motel">Мотель</label>
 					<input type="checkbox" name="apartment" id="apartment" checked>
 					<label for="hotel">Апартаменты</label>
-			</div>
-			<div class="filter-group">
-				    <div class="filter-title">стоимость в сутки (Р):</div>
+			</fieldset>
+			<fieldset>
+				    <legend>стоимость в сутки (Р):</legend>
 					<label for="min-price">от</label>
 					<input type="text" value="0" name="min-price" id="min-price">
 					<label for="max-price">до</label>
 					<input type="text" value="3000" name="max-price" id="max-price">
-			</div>
-			<div class="cost-bar">
-			</div>
+			</fieldset>
+			<div class="cost-bar"></div>
 			<button type="submit" class="btn-choice">Показать</button>
 		</form>
 			<section class="searching">
@@ -131,21 +130,19 @@
 					</div>	
 				</div>
 			</section>	
-			<footer>
-				  <div class="footer-hashtag">
-					<a href="#">
-					#visitsedona
-					</a>
-				  </div>
-				  <div class="footer-social">
+			<footer class="main-footer clearfix">
+				<div class="footer-hashtag">
+					<a href="#">#visitsedona</a>
+				</div>
+				<div class="footer-social">
 					<a class="social-btn twitter" href="#">Твиттер</a>
 					<a class="social-btn facebook" href="#">Фейсбук</a>
 					<a class="social-btn youtube" href="#">Youtube</a>
-				  </div>
-				  <div class="footer-copyright">
+				</div>
+				<div class="footer-copyright">
 					<p>Website by</p>
 					<a href="https://htmlacademy.ru" class="copyright">HTML Academy</a>
-				  </div>
-			</footer>					
+				</div>
+			</footer>							
 	</body>
 </html>	

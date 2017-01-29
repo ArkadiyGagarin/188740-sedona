@@ -95,7 +95,7 @@
 				<p>Укажите предпологаемые даты поездки,
 				и мы покажем вам лучшие предложения гостиниц в седоне</p>
 				<div class="btn">
-					  <button>Поиск гостиницы в седоне</button>					
+					<button>Поиск гостиницы в седоне</button>					
 				</div>
 			</section>
 		</main>
@@ -112,51 +112,47 @@
 							<div class="column">
 								<label for="departure">Дата выезда</label>								
 								<input type="text" name="departure" id="departure" value="4 июля 2017">
+								<button class="calendar"></button>
 							</div>
-							<div class="calendar"></div>
 						</div>
-						<div class="form-row">
-							<div class="adults">
-									<label for="adults">Взрослые</label>
-							</div>
+						<div class="form-row">							
+							<label for="adults">Взрослые</label>							
 							<div class="counter">
-									<div class="icon-minus"></div>
-									<input type="text" name="adults" id="adults" value="2">		
-									<div class="icon-plus"></div>
+								<button class="icon-minus">-</button>
+								<input type="text" name="adults" id="adults" value="2">		
+								<button class="icon-plus">+</button>
 							</div>
 							<div class="children-row">
 								<div class="children">									
 									<label for="children">Дети</label>
 								</div>
 								<div class="counter">
-									<div class="icon-minus"></div>
+									<button class="icon-minus">-</button>
 									<input type="text" name="children" id="children" value="0">
-									<div class="icon-plus"></div>
+									<button class="icon-plus">+</button>
 								</div>
 							</div>
-						</div>						
-						<button class="btn" type="submit">Найти</button>						
+						</div>												
 					</div>
+					<button class="btn" type="submit">Найти</button>
 				</form>
 				
 			<div class="map">
 				<img src="http://placehold.it/150x100" alt="Карта">
 			</div>
-			 <footer class="main-footer clearfix">
-				  <div class="footer-hashtag">
-					<a href="#">
-					#visitsedona
-					</a>
-				  </div>
-				  <div class="footer-social">
+			<footer class="main-footer clearfix">
+				<div class="footer-hashtag">
+					<a href="#">#visitsedona</a>
+				</div>
+				<div class="footer-social">
 					<a class="social-btn twitter" href="#">Твиттер</a>
 					<a class="social-btn facebook" href="#">Фейсбук</a>
 					<a class="social-btn youtube" href="#">Youtube</a>
-				  </div>
-				  <div class="footer-copyright">
+				</div>
+				<div class="footer-copyright">
 					<p>Website by</p>
 					<a href="https://htmlacademy.ru" class="copyright">HTML Academy</a>
-				  </div>
+				</div>
 			</footer>					
   </body>
 </html>
