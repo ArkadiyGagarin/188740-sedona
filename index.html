@@ -95,48 +95,50 @@
 				<h2> Заинтересовались?</h2>
 				<p>Укажите предпологаемые даты поездки,
 				и мы покажем вам лучшие предложения гостиниц в седоне</p>
-				<div class="btn">
-					<button>Поиск гостиницы в седоне</button>					
-				</div>
 			</section>
 		</main>
-			<form class="application-form" action="https://echo.htmlacademy.ru" method="post">
-				<div class="application-form main">
-					<div class="form-row">
-						<div class="column">
-							<label for="arrival">Дата заезда:</label>								
-							<input type="text" name="arrival-date" id="arrival" value="24 апреля 2016">
-							<button class="calendar"></button>
-						</div>							
-					</div>
-					<div class="form-row">
-						<div class="column">
-							<label for="departure">Дата выезда</label>								
-							<input type="text" name="departure" id="departure" value="4 июля 2017">
-							<button class="calendar"></button>
+			<div class="form">
+				<div class="btn">
+						<button>Поиск гостиницы в седоне</button>					
+				</div>
+				<form class="application-form" action="https://echo.htmlacademy.ru" method="post">
+					<div class="application-form main">
+						<div class="form-row">
+							<div class="column">
+								<label for="arrival">Дата заезда:</label>								
+								<input type="text" name="arrival-date" id="arrival" value="24 апреля 2016">
+								<button class="calendar"></button>
+							</div>							
 						</div>
-					</div>
-					<div class="form-row">							
-						<label for="adults">Взрослые</label>							
-						<div class="counter">
-							<button class="icon-minus">-</button>
-							<input type="text" name="adults" id="adults" value="2">		
-							<button class="icon-plus">+</button>
-						</div>
-						<div class="children-row">
-							<div class="children">									
-								<label for="children">Дети</label>
+						<div class="form-row">
+							<div class="column">
+								<label for="departure">Дата выезда</label>								
+								<input type="text" name="departure" id="departure" value="4 июля 2017">
+								<button class="calendar"></button>
 							</div>
+						</div>
+						<div class="form-row">							
+							<label for="adults">Взрослые</label>							
 							<div class="counter">
 								<button class="icon-minus">-</button>
-								<input type="text" name="children" id="children" value="0">
+								<input type="text" name="adults" id="adults" value="2">		
 								<button class="icon-plus">+</button>
 							</div>
-						</div>
-					</div>												
-				</div>
-				<button class="btn" type="submit">Найти</button>
-			</form>			
+							<div class="children-row">
+								<div class="children">									
+									<label for="children">Дети</label>
+								</div>
+								<div class="counter">
+									<button class="icon-minus">-</button>
+									<input type="text" name="children" id="children" value="0">
+									<button class="icon-plus">+</button>
+								</div>
+							</div>
+						</div>												
+					</div>
+					<button class="btn" type="submit">Найти</button>
+				</form>
+			</div>
 			<div class="map">
 				<img src="img/map.jpg" alt="Карта">
 			</div>
