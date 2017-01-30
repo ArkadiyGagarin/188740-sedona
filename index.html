@@ -3,11 +3,12 @@
   <head>
     <meta charset="utf-8">
     <title>Sedona</title>
+	<link rel="StyleSheet" href="css/style.css" type="text/css">
   </head>
   <body>
 		<header class="main-header">
 			<div class="active-logo">
-					<a href="index.html"> <img src="http://placehold.it/150x100" alt="Логотип">
+					<a href="index.html"> <img src="img/logo.png" alt="Логотип">
 					</a>
 			</div>
 			<nav class="navigation">
@@ -31,7 +32,7 @@
 		</header>
 		<main class="main-container">
 			<div class="index-logo">
-				<img src="http://placehold.it/150x100" alt="index-logo">
+				<img src="img/index-logo.jpg" width="1200" height="768" alt="index-logo">
 			</div>
 			<header class="header">
 				
@@ -46,7 +47,7 @@
 					<p>Седона &mdash; не аттракцион для туристов, там течет своя жизнь.</p>
 				</div>
 				<div class="features-img">
-					<img src="http://placehold.it/150x100" alt="Настоящий городок">
+					<img src="img/image1.jpg" alt="Настоящий городок">
 				</div>	
 			</section>
 			<section class="benefits offers">
@@ -65,7 +66,7 @@
 			</section>
 			<section class="features fix">
 				<div class="features-img">
-					<img src="http://placehold.it/150x100" alt="Мост дьявола">
+					<img src="img/image2.jpg" alt="Мост дьявола">
 				</div>
 				<div class="features-item">
 					<h2>Там есть мост дьявола</h2>
@@ -99,46 +100,45 @@
 				</div>
 			</section>
 		</main>
-				 <form class="application-form" action="https://echo.htmlacademy.ru" method="post">
-					<div class="application-form main">
-						<div class="form-row">
-							<div class="column">
-								<label for="arrival">Дата заезда:</label>								
-								<input type="text" name="arrival-date" id="arrival" value="24 апреля 2016">
-							</div>
-							<div class="calenar"></div>
+			<form class="application-form" action="https://echo.htmlacademy.ru" method="post">
+				<div class="application-form main">
+					<div class="form-row">
+						<div class="column">
+							<label for="arrival">Дата заезда:</label>								
+							<input type="text" name="arrival-date" id="arrival" value="24 апреля 2016">
+							<button class="calendar"></button>
+						</div>							
+					</div>
+					<div class="form-row">
+						<div class="column">
+							<label for="departure">Дата выезда</label>								
+							<input type="text" name="departure" id="departure" value="4 июля 2017">
+							<button class="calendar"></button>
 						</div>
-						<div class="form-row">
-							<div class="column">
-								<label for="departure">Дата выезда</label>								
-								<input type="text" name="departure" id="departure" value="4 июля 2017">
-								<button class="calendar"></button>
-							</div>
+					</div>
+					<div class="form-row">							
+						<label for="adults">Взрослые</label>							
+						<div class="counter">
+							<button class="icon-minus">-</button>
+							<input type="text" name="adults" id="adults" value="2">		
+							<button class="icon-plus">+</button>
 						</div>
-						<div class="form-row">							
-							<label for="adults">Взрослые</label>							
+						<div class="children-row">
+							<div class="children">									
+								<label for="children">Дети</label>
+							</div>
 							<div class="counter">
 								<button class="icon-minus">-</button>
-								<input type="text" name="adults" id="adults" value="2">		
+								<input type="text" name="children" id="children" value="0">
 								<button class="icon-plus">+</button>
 							</div>
-							<div class="children-row">
-								<div class="children">									
-									<label for="children">Дети</label>
-								</div>
-								<div class="counter">
-									<button class="icon-minus">-</button>
-									<input type="text" name="children" id="children" value="0">
-									<button class="icon-plus">+</button>
-								</div>
-							</div>
-						</div>												
-					</div>
-					<button class="btn" type="submit">Найти</button>
-				</form>
-				
+						</div>
+					</div>												
+				</div>
+				<button class="btn" type="submit">Найти</button>
+			</form>			
 			<div class="map">
-				<img src="http://placehold.it/150x100" alt="Карта">
+				<img src="img/map.jpg" alt="Карта">
 			</div>
 			<footer class="main-footer clearfix">
 				<div class="footer-hashtag">
